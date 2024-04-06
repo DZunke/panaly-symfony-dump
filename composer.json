@@ -1,0 +1,41 @@
+{
+    "name": "dzunke/panaly-symfony-dump",
+    "description": "A Panaly plugin that is delivering a symfony dump reporting - for debugging usage",
+    "type": "library",
+    "license": "MIT",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "DZunke\\PanalySymfonyDump\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "DZunke\\PanalySymfonyDump\\Test\\": "tests/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Denis Zunke",
+            "email": "denis.zunke@gmail.com"
+        }
+    ],
+    "require": {
+        "dzunke/panaly": "dev-main",
+        "php": "^8.3",
+        "symfony/var-dumper": "^7.0"
+    },
+    "require-dev": {
+        "doctrine/coding-standard": "^12.0",
+        "phpstan/phpstan": "^1.10",
+        "phpstan/phpstan-deprecation-rules": "^1.1",
+        "phpstan/phpstan-strict-rules": "^1.5",
+        "phpunit/phpunit": "^11.1"
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true
+        }
+    }
+}
