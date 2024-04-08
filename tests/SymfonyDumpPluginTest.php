@@ -19,18 +19,18 @@ class SymfonyDumpPluginTest extends TestCase
             [SymfonyDump::class],
             array_map(
                 static fn (Reporting $reporting) => $reporting::class,
-                (new SymfonyDumpPlugin())->getAvailableReporting(),
+                (new SymfonyDumpPlugin())->getAvailableReporting([]),
             ),
         );
     }
 
     public function testThatThereAreNotMetricsDelivered(): void
     {
-        self::assertSame([], (new SymfonyDumpPlugin())->getAvailableMetrics());
+        self::assertSame([], (new SymfonyDumpPlugin())->getAvailableMetrics([]));
     }
 
     public function testThatThereAreNoStorageDelivered(): void
     {
-        self::assertSame([], (new SymfonyDumpPlugin())->getAvailableStorages());
+        self::assertSame([], (new SymfonyDumpPlugin())->getAvailableStorages([]));
     }
 }

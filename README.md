@@ -9,7 +9,7 @@ It is not recommended to be utilized as it is not that readable to have the full
 
 ```yaml
 plugins:
-    - DZunke\PanalySymfonyDump\SymfonyDumpPlugin
+    DZunke\PanalySymfonyDump\SymfonyDumpPlugin: ~ # no options available
 
 reporting:
     symfony_dump: ~ # No options needed, it is just a dump
