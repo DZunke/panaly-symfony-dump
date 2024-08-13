@@ -8,6 +8,7 @@ It is not recommended to be utilized as it is not that readable to have the full
 ## Example Configuration
 
 ```yaml
+# panaly.dist.yaml
 plugins:
     DZunke\PanalySymfonyDump\SymfonyDumpPlugin: ~ # no options available
 
